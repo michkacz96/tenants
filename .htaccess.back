@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www.)?mkaczmarczyk.com$
+RewriteRule ^(/)?$ public [L]
+RedirectMatch 302 ^/$ http://www.mkaczmarczyk.com/public
